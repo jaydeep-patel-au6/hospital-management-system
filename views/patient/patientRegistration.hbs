@@ -1,0 +1,65 @@
+<br><br>
+<h3>{{viewTitle}}</h3>
+<h3 style="color: red;">{{viewTitleErr}}</h3>
+<br>
+<form action="/patientRegistration" method="POST">
+{{!-- patient full name --}}
+  <div class="form-group">
+    <label for="exampleInputEmail1">Patient Full Name</label>
+    <input type="text" class="form-control" name="patientName" placeholder="Enter Patient Full Name">
+  </div>
+
+{{!-- patient age --}}
+  <div class="form-group">
+    <label for="exampleInputEmail1">Age</label>
+    <input type="Number" class="form-control" name="age" placeholder="Enter Patient age">
+  </div>
+
+{{!-- patient gender --}}
+<div class="form-group">
+  <label for="exampleInputEmail1">Select Gender</label><br>
+  <input  type="radio" name="gender"  value="male" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Male
+  </label><br>
+  <input  type="radio" name="gender" value="female" >
+  <label class="form-check-label" for="exampleRadios1">
+    Female
+  </label>
+</div>
+
+{{!-- blood group --}}
+<div class="form-group">
+    <label for="exampleInputEmail1">Blood Group</label>
+    <input type="text" class="form-control"  name='bloodGroup' placeholder="Enter Patient blood group">
+  </div>
+
+{{!-- patient contact number --}}
+<div class="form-group">
+    <label for="exampleInputEmail1">Patient contact Number</label>
+    <input type="tel" class="form-control" name="contactNumber" placeholder="Enter Patient contact number">
+  </div>
+
+  {{!-- address --}}
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Address / city / villege</label>
+    <input type="text" class="form-control" name="address" placeholder="Enter Patient Address or city or villege">
+  </div>
+
+  {{!-- referred by doctor --}}
+    <div class="form-group">
+    <label for="exampleInputEmail1">Reefered by which Doctor</label>
+    <input type="text" class="form-control" name="refferedDoctor"  placeholder="Enter Referred doctor full name">
+  </div>
+
+   {{!-- contect during emergency --}}
+    <div class="form-group">
+    <label for="exampleInputEmail1">Contect during Emergency</label>
+    <input type="text" class="form-control" name="emergencyPersonName" placeholder="Enter emergency contact person name">
+    <input type="text" class="form-control" name="emergencyPationtRelation" placeholder="Enter retation to patient">
+    <input type="tel" class="form-control" name="emergencyContactNumber" placeholder="Enter contact number">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,28 @@
+{
+  "name": "hospital-management-system",
+  "version": "1.0.0",
+  "description": "hospital management system for personal project. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaydeep-patel-au6/hospital-management-system.git"
+  },
+  "author": "jaydeep patel, digvijaysinh basiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaydeep-patel-au6/hospital-management-system/issues"
+  },
+  "homepage": "https://github.com/jaydeep-patel-au6/hospital-management-system#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mongoose": "^4.13.20",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-sequence": "^5.2.2",
+    "nodemon": "^2.0.4"
+  }
+}
