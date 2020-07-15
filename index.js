@@ -8,6 +8,7 @@ require('./config/databaseConnection')
 
 //routes declaration
 const patientRegistration = require('./routes/patient/patientRegistrationRoutes')
+const adminDepartmentDeclare = require('./routes/admin/adminDepartmentDeclareRoute')
 
 
 //create app middleware
@@ -26,7 +27,7 @@ app.use(bodyParser.json());
 
 //connection routes to server
 app.use('/patientRegistration', patientRegistration)
-
+app.use('/adminDepartmentDeclare', adminDepartmentDeclare)
 
 
 

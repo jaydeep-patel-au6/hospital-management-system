@@ -9,3 +9,4 @@ module.exports = connection
 
 //models connection
 require('../models/patient/patientRegistrationModel')
+require('../models/admin/adminDepartmentDeclareModel')

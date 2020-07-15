@@ -10,6 +10,6 @@ router.get('/', patientRegistration.getForm) //form display routes
 
 router.post('/', patientRegistration.postForm) //post data form route
 
-router.get('/patientList', patientRegistration.getAllData) //get patient registration all data
+router.get('/list', patientRegistration.getAllData) //get patient registration all data
 
 module.exports = router

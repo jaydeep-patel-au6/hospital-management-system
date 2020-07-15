@@ -1,0 +1,32 @@
+
+
+
+<h3 style="color:violet;">{{viewTitle4}}</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Department Name</th>
+      <th scope="col">Doctore Name</th>
+      <th scope="col">Created at</th>
+      <th scope="col">Update | Delete</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+
+      {{#each list}}
+    <tr>
+      <th scope="row">{{this._id}}</th>
+      <th scope="row">{{this.departmentName}}</th>
+      <th scope="row">{{this.doctorName}}</th>
+      <th scope="row">{{this.time}}</th>
+      <th scope="row">
+            <a href="/anno/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <a href="/adminDepartmentDeclare/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+      </th>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -12,7 +12,7 @@ class patientRegistration {
 
     //insert data to database
     postForm(req, res){
-        console.log(req.body)
+        //console.log(req.body)
         var patient = new Patient()
         patient.patientName = req.body.patientName
         patient.age = req.body.age
