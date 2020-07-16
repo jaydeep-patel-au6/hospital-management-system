@@ -10,6 +10,10 @@ routes.post('/', adminDD.postForm) // submit form data
 
 routes.get('/list', adminDD.getAllData) // get all submited data
 
+routes.get('/:id', adminDD.getID) //get id for update record
+
+routes.get('/delete/:id', adminDD.deleteData) // delete record
+
 
 
 module.exports = routes

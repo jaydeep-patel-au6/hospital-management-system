@@ -8,13 +8,14 @@
 
 
 <form action="/adminDepartmentDeclare" method="POST">
+<input type="hidden" name="_id" value="{{adminDD._id}}">
   <div class="form-group">
     <label for="exampleInputEmail1">Department Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="departmentName" placeholder="Insert Department Name ">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="departmentName" placeholder="Insert Department Name " value="{{adminDD.departmentName}}">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Doctor Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="doctorName" placeholder="Insert Department Name ">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="doctorName" placeholder="Insert Department Name " value="{{adminDD.doctorName}}">
   </div>
   
   <button type="submit" class="btn btn-primary">Submit</button>

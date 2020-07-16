@@ -12,4 +12,8 @@ router.post('/', patientRegistration.postForm) //post data form route
 
 router.get('/list', patientRegistration.getAllData) //get patient registration all data
 
+router.get('/:id', patientRegistration.getID) //get id for update record
+
+router.get('/delete/:id', patientRegistration.deleteData) // delete record
+
 module.exports = router
